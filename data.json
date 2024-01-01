@@ -1,0 +1,153 @@
+
+
+{
+  "file":"data. json",
+  "Introduction":{},
+
+  "About":{
+    
+    "desc":"Greetings! I'm Isaac, a passionate computer science graduate with a knack for turning code into captivating digital experiences. My journey began with web development, where I honed my skills in crafting dynamic and user-friendly interfaces. Eager to explore the full spectrum of development, I am currently immersing myself in the realms of full-stack and backend technologies.In my coding escapades, I wield the power of React.js and Tailwind CSS to sculpt visually stunning front-end landscapes. On the backend, Python and JavaScript serve as my trusted companions, helping me architect robust and scalable solutions.",
+    "cont":" Currently, I'm deep into building AfyaStack, a project close to my heart. AfyaStack isn't just a link; it's a digital haven where innovation meets purpose. With every line of code, I'm shaping a platform that goes beyond technology, offering impactful solutions and a seamless user experience. Beyond the screen, I am captivated by the endless possibilities that technology presents. Each line of code I write is a step toward innovation, problem-solving, and the creation of meaningful digital journeys.",
+    "outro":" I'm not immersed in the world of code, you'll find me seeking the perfect espresso, discovering new musical gems, and savoring life's simple joys. Join me on this digital odyssey where creativity meets functionality, and let's explore the boundless potential of technology together. Welcome to my digital haven! 🚀✨"
+    },
+
+
+  "Skills":[
+    {
+      "skill":"Python",
+      "rating":4
+    },
+    {
+      "skill":"Javascript",
+      "rating":5
+    },
+    {
+      "skill":"Data Structures & Algorithms",
+      "rating":5
+    },
+    {
+      "skill":"React Js",
+      "rating": 4
+    },
+    {
+      "skill":"UI/UX",
+      "rating":4
+    },
+    {
+      "skill":"CSS / TailwindCSS",
+      "rating":5
+    },
+    {
+      "skill":"MongoDb",
+      "rating":4
+    },
+    {
+      "skill":"Firebase",
+      "rating":4
+    },
+    {
+      "skill":"SQL",
+      "rating":4
+    },
+    {
+      "skill":"Azure",
+      "rating":2
+    },
+    {
+      "skill":"Git",
+      "rating":2
+    },
+    {
+      "skill":"Azure",
+      "rating":2
+    }
+    
+  ],
+
+
+  "Projects":[
+    {
+      "title":"Yote Platform",
+      "image":"/src/assets/mamboyote.png",
+      "description":"An website apllication tha connect busiiness to customers by allowing customer view bussinesses within a specific region",
+      "stack":[
+        {"name":"Python"},
+        {"name":"Javascript"},
+        {"name":"Firebase"},
+        {"name":"Tailwindcss"}
+       
+      ],
+      "github":"https://github.com/isaac-kiplangat",
+      "live":"https://mamboyote.vercel.app"
+    },
+    {
+      "title":"shorty url shortener",
+      "image":"/src/assets/shorty.png",
+      "description":"An  url shortening website apllication that reduces ur url from largy to short and memorable made with react vite & tailwind, using bitly API, inspiration from frontend mentor",
+      "stack":[
+        {"name":"Python"},
+        {"name":"Javascript"},
+        {"name":"bitly API"},
+        {"name":"Tailwindcss"}
+       
+      ],
+      "github":"https://github.com/isaac-kiplangat",
+      "live":"https://shorty-url-shortener.vercel.app/"
+    },
+    {
+      "title":"Crowdfundme",
+      "image":"/src/assets/crowdfundme.png",
+      "description":"a crowdfunding platform for startup products, made with react vite and tailwindcss, no backend",
+      "stack":[
+        {"name":"Javascript"},
+        {"name":"Tailwindcss"}
+       
+      ],
+      "github":"https://github.com/isaac-kiplangat",
+      "live":"https://crowdfundme-azure.vercel.app/"
+    },
+    {
+      "title":"Summarize",
+      "description":"An  website that leverage chatGPT api to summarize any page, or Document url into short brief text ",
+      "stack":[
+        {"name":"ChatGPT API"},
+        {"name":"Javascript"},
+        {"name":"NextjS"},
+        {"name":"Tailwindcss"}
+       
+      ],
+      "github":"https://github.com/isaac-kiplangat",
+      "live":"https://ai-summarizer-with-gpt-4.vercel.app/",
+      "imageUrl":"ai-summarizer-with-gpt-4.vercel.app/"
+    }
+    
+    
+  ],
+
+
+
+  "Experience":[
+
+    {
+      "name":"KCSE ROBOT",
+      "title":"Web DEveloper",
+      "roles":[
+        {
+          "role":"Designed and implemented responsive user interfaces using modern web technologies to enhance the overall user experience of the KCSE robot platform."
+        },
+        { "role":"Collaborated with the development team to integrate new features and functionalities into the web application, contributing to the continuous improvement of KCSE robot's product offerings."
+      },
+        { "role":"Conducted thorough testing of web applications, identified and resolved bugs, ensuring the reliability and stability of the platform for end-users."
+      },
+        {"role":"Contributed to documentation efforts, providing clear and comprehensive insights into codebases, and actively participated in team discussions, fostering a collaborative and productive development environment."
+      }
+      ]
+    }
+
+  ]
+
+
+
+
+
+}
