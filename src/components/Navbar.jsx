@@ -89,7 +89,10 @@ const Navbar = ({darkMode, setMode}) => {
         <h2 className='md:text-lg text-md dark:text-white text-black '>Welcome</h2>
       </div>
       {/* Menu icon for small screen */}
+      <div className='w-1/3 flex justify-between items-center md:hidden '>
+      {darkMode ?  <FaMoon size={18} onClick={setMode} className='text-white'/> :<MdSunny size={20} onClick={setMode} className='text-orange-500'/> }
       <MdMenu size={30} className='block dark:text-white md:hidden mr-4' onClick={handleOpenMenu}/>
+      </div>
 
       {/* Menu for large Screen */}
       <div className='w-4/5 hidden md:flex justify-around'>

@@ -11,6 +11,7 @@ import {GitOriginal} from 'devicons-react';
 import {MongodbOriginal} from 'devicons-react';
 import {FirebasePlain} from 'devicons-react';
 import {AzureOriginal} from 'devicons-react';
+import {motion} from "framer-motion"
 
 
 
@@ -48,9 +49,18 @@ const Skills = () => {
         return <AzureOriginal size={30} />;
     }
   };
-  
+
+  const squareVariants = {
+    visible: { opacity: 1, scale: 1, transition:{ duration : 0.05}},
+    hidden: {opacity: 0, scale:0}
+  }
+
   return (
-    <section id='skill' className='my-4'>
+ <motion.section
+     initial='hidden'
+     animate={{scale: 0.1}}
+     variants={squareVariants}
+     whileInView='visible'id='skill' className='my-4'>
     <div className='grid md:flex flex-row my-8 py-4 md:py-8 gap-4  md:gap-8'>
       <h1 className='basis-1/3 text-4xl font-normal dark:text-white flex gap-2 items-center'>Skills<FaArrowCircleRight size={30}/></h1>
       <p className='basis-2/3 md:text-lg text-md dark:text-white/80 text-gray-600'>You bring the challenge and your domain knowledge. I bring design, technology, and over 2 years of experience.
@@ -83,7 +93,7 @@ const Skills = () => {
 </div>
 
     </div>
-    </section>
+    </motion.section>
   )
 }
 

@@ -1,11 +1,22 @@
 import React from 'react'
-import { FaArrowCircleRight, FaMailBulk, FaPhone,  } from 'react-icons/fa'
+import { FaArrowCircleRight  } from 'react-icons/fa'
 import { IoIosSend} from 'react-icons/io'
-import {MdLocationCity, MdLocationPin, MdMail, MdPhone} from 'react-icons/md'
+import { MdLocationPin, MdMail, MdPhone} from 'react-icons/md'
+import { motion } from 'framer-motion'
 
 const Contact = () => {
+  const squareVariants = {
+    visible: { opacity: 1, scale: 1, transition:{ duration : 0.5}},
+    hidden: {opacity: 0, scale:0}
+  }
+
   return (
-    <section id='contact' className='mt-8'>
+ <motion.section
+     initial='hidden'
+     animate={{scale: 0.1}}
+     variants={squareVariants}
+     whileInView='visible'
+     id='contact' className='mt-8'>
       <div className=' grid md:flex md:flex-row my-4 py-8 gap-8 items-center'>
       <h1 className='basis-1/3 text-4xl dark:text-white font-normal flex gap-2 items-center'>Contact<FaArrowCircleRight size={30}/></h1>
       <p className='basis-2/3  md:md:text-lg text-md  text-gray-600 dark:text-white/80'>Let's connect!  Looking forward to discussing collaboration opportunities and tech adventures. </p>
@@ -57,7 +68,7 @@ const Contact = () => {
 </div>
 
 </div>
-    </section>
+    </motion.section>
     )
 }
 

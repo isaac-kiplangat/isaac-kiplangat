@@ -2,10 +2,17 @@ import React from 'react'
 import {MdArrowDownward, MdArrowOutward} from 'react-icons/md'
 import BlueOrange from '../assets/blue-orange.jpg'
 import { FaGithub, FaLinkedin, FaPinterest, FaTwitter } from 'react-icons/fa'
+import { motion } from 'framer-motion'
+
 
 const Introduction = () => {
   return (
-    <section style={{backgroundImage: `url(${BlueOrange})`}} id='home' className='h-[70vh] brightness-120  flex items-end  bg-cover overflow-hidden rounded-xl  p-4  md:p-8'>
+    
+    <motion.section
+    initial={{opacity:0, transition:{ }}}
+    animate={{opacity:1}} 
+    transition={{ duration:0.5, delay:0.1}}
+    style={{backgroundImage: `url(${BlueOrange})`}} id='home' className='h-[70vh] brightness-120  flex items-end  bg-cover overflow-hidden rounded-xl  p-4  md:p-8'>
       {/* <div className='w-full h-full right-0 top-0 bg-black bg-opacity-10 absolute z-10'></div> */}
       <div className=' bottom-4 md:bottom-8 bg-gray-700 bg-opacity-60 p-4 rounded-lg w-[100%] md:w-full md:mr-8'>
       <div className='text-white mb-4 flex-col '>
@@ -37,7 +44,7 @@ Full-stack developer passionate about crafting seamless, end-to-end solutions. T
       </div>
 
 
-    </section>
+    </motion.section>
   )
 }
 

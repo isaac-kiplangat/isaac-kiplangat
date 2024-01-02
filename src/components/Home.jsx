@@ -20,10 +20,14 @@ const Home = () => {
     setDarkMode(!darkMode)
   }
 
-  const textMessage = "Happy New Year"
+  const textMessage = "Happy New Year 2024"
   const onClose = setTimeout(()=>{
     setShowNotification(false)
   }, 10000)
+
+  const handleClose = ()=>{
+    setShowNotification(false)
+  }
 
   useEffect(()=>{
     const interval = setInterval(()=>{
@@ -42,7 +46,7 @@ const Home = () => {
      <section className={`top-0 ${darkMode ? 'dark':''} `}>
       <div className={`bg-gray-100 dark:bg-gradient-to-tr from-slate-800 via-slate-700 to-violet-950 w-full`}>
       {ShowNotification && (
-        <Notification onClose={onClose} message={textMessage} progress={progress}/>
+        <Notification handleClose={handleClose} message={textMessage} progress={progress}/>
       )}
       <div className={` ${ShowNotification ? '': 'top-0'} px-2 md:px-5  h-20 fixed w-full  right-0 dark:bg-gradient-to-r from-slate-700 via-slate-900 to-violet-950 bg-gray-100 bg-opacity-95 dark:bg-opacity-90`}>
       <Navbar darkMode={darkMode} setMode={setMode}/>
