@@ -10,9 +10,10 @@ import Projects from './Projects'
 import Contact from './Contact'
 import Footer from './Footer'
 import Notification from './Notification'
+import ParticlesComponents from './Particles'
 
 const Home = () => {
-  const [ShowNotification, setShowNotification] = useState(true)
+  const [ShowNotification, setShowNotification] = useState(false)
   const [progress, setProgress] = useState(100);
   const [darkMode,setDarkMode] = useState(false)
 
@@ -44,6 +45,7 @@ const Home = () => {
 
   return (
      <section className={`top-0 ${darkMode ? 'dark':''} `}>
+      <ParticlesComponents/>
       <div className={`bg-gray-100 dark:bg-gradient-to-tr from-slate-800 via-slate-700 to-violet-950 w-full`}>
       {ShowNotification && (
         <Notification handleClose={handleClose} message={textMessage} progress={progress}/>

@@ -10,7 +10,11 @@ const Projects = () => {
   const ProjectsData = Data.Projects
   
   const squareVariants = {
-    visible: { opacity: 1, scale: 1, transition:{ duration : 0.5}},
+    visible: { opacity: 1, scale: 1, transition:{ duration : 0.2}},
+    hidden: {opacity: 0, scale:0}
+  }
+  const squareVariants1 = {
+    visible: { opacity: 1, scale: 1, transition:{ duration : 0.1}},
     hidden: {opacity: 0, scale:0}
   }
 
@@ -18,7 +22,7 @@ const Projects = () => {
  <motion.section
      initial='hidden'
      animate={{scale: 0.1}}
-     variants={squareVariants}
+     variants={squareVariants1}
      whileInView='visible'
      id='projects' className='my-4'>
       <div className='grid md:flex flex-row my-4 md:py-8 py-4 gap-4 md:gap-8'>
@@ -30,7 +34,14 @@ const Projects = () => {
 
     <div className='grid md:grid-cols-2 gap-8'>
       {ProjectsData.map((item,index)=>(
+        <motion.div
+        initial='hidden'
+        animate={{scale: 0.1}}
+        variants={squareVariants}
+        whileInView='visible'
+        >
       <ProjectCard key={index} info={item} stack={item.stack}/>
+      </motion.div>
       ))}
  
 
